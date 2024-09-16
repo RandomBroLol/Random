@@ -150,6 +150,14 @@ GameTab:AddButton({
   	end    
 })
 
+
+GameTab:AddButton({
+	Name = "🩸 MM2 (Murder Mystery 2)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
+  	end    
+})
+
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
