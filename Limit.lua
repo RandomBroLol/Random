@@ -38,7 +38,7 @@ HomeTab:AddLabel("This Script is made for exploiting works for solara🤑")
 HomeTab:AddLabel("This Script includes things like:")
 HomeTab:AddLabel("Other Hubs,Local Scripts,Player,Games,FE Scripts, Misc")
 HomeTab:AddLabel("Update 1.0:")
-HomeTab:AddLabel("Released")
+HomeTab:AddLabel("Added MM2")
 --[[
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
