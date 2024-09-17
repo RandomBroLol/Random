@@ -37,8 +37,8 @@ HomeTab:AddLabel("🏠 Home")
 HomeTab:AddLabel("This Script is made for exploiting works for solara🤑")
 HomeTab:AddLabel("This Script includes things like:")
 HomeTab:AddLabel("Other Hubs,Local Scripts,Player,Games,FE Scripts, Misc")
-HomeTab:AddLabel("Update 1.0:")
-HomeTab:AddLabel("Added MM2")
+HomeTab:AddLabel("Update 1.2:")
+HomeTab:AddLabel("Added A new tab Trolling,New Games")
 --[[
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
@@ -161,4 +161,55 @@ GameTab:AddButton({
 --[[
 Name = <string> - The name of the button.
 Callback = <function> - The function of the button.
+]]
+
+
+local TrollTab = Window:MakeTab({
+	Name = "Trolling",
+	Icon = "rbxassetid://9943307858",
+	PremiumOnly = false
+})
+
+TrollTab:AddLabel("💎 Trolling")
+
+TrollTab:AddButton({
+	Name = "FE Yeet Gui",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/YH71crA8'))()
+  	end    
+})
+
+
+TrollTab:AddLabel("🚫 Will not work if the game dosent support character collision!!!")
+
+
+GameTab:AddButton({
+	Name = "🔫 Big Paintball (Classic)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/PA5hX5zK'))()
+  	end    
+})
+
+
+GameTab:AddButton({
+	Name = "⚰️ Strongest BattleGrounds",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/JayXSama/ray-makk/main/Loader"))()
+  	end    
+})
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+
+--[[
+Name = <string> - The name of the tab.
+Icon = <string> - The icon of the tab.
+PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
