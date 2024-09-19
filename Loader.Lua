@@ -1,6 +1,16 @@
 local player = game.Players.LocalPlayer
+local allowedUsers = { "Hamstersuit3", "PiratSG21" }
 
-if player.Name == "HamsterSuit3" then
+local isAllowedUser = false
+
+for _, username in ipairs(allowedUsers) do
+    if player.Name == username then
+        isAllowedUser = true
+        break
+    end
+end
+
+if isAllowedUser then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/main/Limit.lua", true))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Limiter.lua", true))()
