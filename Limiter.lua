@@ -34,11 +34,11 @@ local HomeTab = Window:MakeTab({
 })
 
 HomeTab:AddLabel("🏠 Home")
-HomeTab:AddLabel("This Script is made for exploiting works for solara🤑")
+HomeTab:AddLabel("This Script Is Best for: Solara,JJsploit")
 HomeTab:AddLabel("This Script includes things like:")
 HomeTab:AddLabel("Other Hubs,Local Scripts,Player,Games,FE Scripts, Misc")
-HomeTab:AddLabel("Update 1.2:")
-HomeTab:AddLabel("Added A new tab Trolling,New Games")
+HomeTab:AddLabel("Update 1.5:")
+HomeTab:AddParagraph("Update 1.5 Log","Added new Functions in Player Tab and Brookhaven in Games🎮 And FE tools Giver in Misc and  A new chat bypasser")
 --[[
 Name = <string> - The name of the tab.
 Icon = <string> - The icon of the tab.
@@ -192,11 +192,142 @@ GameTab:AddButton({
 
 
 GameTab:AddButton({
-	Name = "⚰️ Strongest BattleGrounds",
+	Name = "⚰️ Strongest Battlegrlounds",
 	Callback = function()
       		loadstring(game:HttpGet("https://raw.githubusercontent.com/JayXSama/ray-makk/main/Loader"))()
   	end    
 })
+
+
+GameTab:AddButton({
+	Name = "Brookhaven 🏡RP",
+	Callback = function()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/sXPiterXs1111/SanderXV2.65/main/sanderXNewV2.65.lua'))()
+  	end    
+})
+
+
+TrollTab:AddButton({
+	Name = "🛡 Bypass Chat Filter(OLD)",
+	Callback = function()
+      		loadstring(game:HttpGet('https://pastebin.com/raw/hrnVx72x'))()
+  	end    
+})
+
+TrollTab:AddLabel("❗ Use Cat ChatBypasser for an better chat bypass!")
+
+TrollTab:AddButton({
+	Name = "🐱‍ Cat ChatBypasser FE (New)",
+	Callback = function()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix"))()
+  	end    
+})
+
+TrollTab:AddParagraph("⛔ Read!","🌐 I decided to keep the old chat bypasser here if the new one breaks")
+
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+PlayerTab:AddTextbox({
+	Name = "Enter JumpPower here",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		-- Check if the value is a valid number
+		local jumpPower = tonumber(Value)
+		if jumpPower and jumpPower > 0 then
+			local player = game.Players.LocalPlayer
+			if player and player.Character then
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid then
+					-- Change the JumpPower
+					humanoid.JumpPower = jumpPower
+					print("JumpPower set to " .. jumpPower)
+				end
+			end
+		else
+			print("Please enter a valid positive number.")
+		end
+	end	  
+})
+
+
+PlayerTab:AddTextbox({
+	Name = "Enter WalkSpeed here",
+	Default = "",
+	TextDisappear = true,
+	Callback = function(Value)
+		-- Check if the value is a valid number
+		local walkSpeed = tonumber(Value)
+		if walkSpeed and walkSpeed > 0 then
+			local player = game.Players.LocalPlayer
+			if player and player.Character then
+				local humanoid = player.Character:FindFirstChildOfClass("Humanoid")
+				if humanoid then
+					-- Change the WalkSpeed
+					humanoid.WalkSpeed = walkSpeed
+					print("WalkSpeed set to " .. walkSpeed)
+				end
+			end
+		else
+			print("Please enter a valid positive number.")
+		end
+	end	  
+})
+
+MiscTab:AddButton({
+	Name = "FE Tools giver",
+	Callback = function()
+      		loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
+  	end    
+})
+
+
+
+--[[
+Name = <string> - The name of the colorpicker.
+Default = <color3> - The default value of the colorpicker.
+Callback = <function> - The function of the colorpicker.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
+--[[
+Name = <string> - The name of the dropdown.
+Default = <string> - The default value of the dropdown.
+Options = <table> - The options in the dropdown.
+Callback = <function> - The function of the dropdown.
+]]
+
+
+
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+
+--[[
+Name = <string> - The name of the textbox.
+Default = <string> - The default value of the textbox.
+TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
+Callback = <function> - The function of the textbox.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+--[[
+Name = <string> - The name of the button.
+Callback = <function> - The function of the button.
+]]
+
 
 --[[
 Name = <string> - The name of the button.
