@@ -152,9 +152,9 @@ GameTab:AddButton({
 
 
 GameTab:AddButton({
-	Name = "🩸 MM2 (Murder Mystery 2)",
+	Name = "🩸 MM2 Updated (Murder Mystery 2)",
 	Callback = function()
-      		loadstring(game:HttpGet('https://pastebin.com/raw/7ySvSZMp'))()
+      		loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
   	end    
 })
 
