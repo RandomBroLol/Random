@@ -1,5 +1,5 @@
 local player = game.Players.LocalPlayer
-local allowedUsers = { "Hamstersuit3", "PiratSG21" }
+local allowedUsers = { "yRiderlo2013", "PiratSG21" }
 
 local isAllowedUser = false
 
