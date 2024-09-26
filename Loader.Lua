@@ -11,7 +11,7 @@ for _, username in ipairs(allowedUsers) do
 end
 
 if isAllowedUser then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/main/Limit.lua", true))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Denied.Lua", true))()
 else
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Limiter.lua", true))()
 end
