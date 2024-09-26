@@ -1,37 +1,38 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "✨ Limits Amazing Hub ✨", Icon= "rbxassetid://5205790785", HidePremium = false, IntroText= "✨ Limits Amazing Hub ✨", IntroIcon= "rbxassetid://5205790785", SaveConfig = false, ConfigFolder = "ClaxesHub"})
 
---[[
-Name = <string> - The name of the UI.
-HidePremium = <bool> - Whether or not the user details shows Premium status or not.
-SaveConfig = <bool> - Toggles the config saving in the UI.
-ConfigFolder = <string> - The name of the folder where the configs are saved.
-IntroEnabled = <bool> - Whether or not to show the intro animation.
-IntroText = <string> - Text to show in the intro animation.
-IntroIcon = <string> - URL to the image you want to use in the intro animation.
-Icon = <string> - URL to the image you want displayed on the window.
-CloseCallback = <function> - Function to execute when the window is closed.
-]]
+-- Check the local player's name
+local playerName = game.Players.LocalPlayer.Name
 
-OrionLib:MakeNotification({
-	Name = "✨ Limits Amazing Hub ✨",
-	Content = "Loaded. Enjoy!",
-	Image = "rbxassetid://5205790785",
-	Time = 5
-})
+-- If the player's name is "yRiderlo2013", load the alternate script
+if playerName == "yRiderlo2013" then
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Denied.Lua", true))()
+else
+    local Window = OrionLib:MakeWindow({
+        Name = "✨ Limits Amazing Hub ✨", 
+        Icon = "rbxassetid://5205790785", 
+        HidePremium = false, 
+        IntroText = "✨ Limits Amazing Hub ✨", 
+        IntroIcon = "rbxassetid://5205790785", 
+        SaveConfig = false, 
+        ConfigFolder = "ClaxesHub"
+    })
 
---[[
-Title = <string> - The title of the notification.
-Content = <string> - The content of the notification.
-Image = <string> - The icon of the notification.
-Time = <number> - The duration of the notfication.
-]]
+    -- Make a notification after loading the UI
+    OrionLib:MakeNotification({
+        Name = "✨ Limits Amazing Hub ✨",
+        Content = "Loaded. Enjoy!",
+        Image = "rbxassetid://5205790785",
+        Time = 5
+    })
 
-local HomeTab = Window:MakeTab({
-	Name = "Home",
-	Icon = "rbxassetid://13012250972",
-	PremiumOnly = false
-})
+    -- Create the "Home" tab 
+    local HomeTab = Window:MakeTab({
+        Name = "Home",
+        Icon = "rbxassetid://13012250972",
+        PremiumOnly = false
+    })
+
+
 
 HomeTab:AddLabel("🏠 Home")
 HomeTab:AddLabel("This Script Is Best for: Solara,JJsploit")
@@ -152,9 +153,9 @@ GameTab:AddButton({
 
 
 GameTab:AddButton({
-	Name = "🩸 MM2 Updated (Murder Mystery 2)",
+	Name = "🩸 MM2 (Murder Mystery 2)",
 	Callback = function()
-      		loadstring(game:HttpGet("https://raw.githubusercontent.com/s-o-a-b/nexus/main/loadstring"))()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
   	end    
 })
 
@@ -283,64 +284,4 @@ MiscTab:AddButton({
       		loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
   	end    
 })
-
-
-
---[[
-Name = <string> - The name of the colorpicker.
-Default = <color3> - The default value of the colorpicker.
-Callback = <function> - The function of the colorpicker.
-]]
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
---[[
-Name = <string> - The name of the dropdown.
-Default = <string> - The default value of the dropdown.
-Options = <table> - The options in the dropdown.
-Callback = <function> - The function of the dropdown.
-]]
-
-
-
-
---[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
-]]
-
---[[
-Name = <string> - The name of the textbox.
-Default = <string> - The default value of the textbox.
-TextDisappear = <bool> - Makes the text disappear in the textbox after losing focus.
-Callback = <function> - The function of the textbox.
-]]
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-
-
---[[
-Name = <string> - The name of the tab.
-Icon = <string> - The icon of the tab.
-PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
-]]
+ end
