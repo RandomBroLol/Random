@@ -13,4 +13,5 @@ Icon = <string> - The icon of the tab.
 PremiumOnly = <bool> - Makes the tab accessible to Sirus Premium users only.
 ]]
 
-FUCKYOUTab:AddLabel("⛔ You have been permamently Banned From using this Script")
+
+FUCKYOUTab:AddParagraph("Banned!","⛔ You have been permamently Banned From using this Script for these reasons: you may be using an alt, or the Dev has banned you so get lost")
