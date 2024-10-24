@@ -153,9 +153,9 @@ GameTab:AddButton({
 
 
 GameTab:AddButton({
-	Name = "🩸 MM2 (Murder Mystery 2)",
+	Name = "🩸 MM2 (Murder Mystery 2) (Nový!)",
 	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/R3TH-PRIV/R3THPRIV/main/loader.lua'))()
+      		loadstring(game:HttpGet('https://raw.githubusercontent.com/ThatSick/ArrayField/main/SymphonyHub.lua'))()
   	end    
 })
 
