@@ -4,7 +4,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 local playerName = game.Players.LocalPlayer.Name
 
 -- If the player's name is "yRiderlo2013", load the alternate script
-if playerName == "yRiderlo2013" then
+if playerName == "HamsterSuit3" then
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Denied.Lua", true))()
 else
     local Window = OrionLib:MakeWindow({
