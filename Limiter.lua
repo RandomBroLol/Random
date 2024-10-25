@@ -1,11 +1,13 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 
--- Check the local player's name
-local playerName = game.Players.LocalPlayer.Name
+-- List of banned player names
+local bannedUsers = {"Hamstersuit3", "Hamstersuit0", "Hamstersuit2", "Hamstersuit1", "Hamstersuit", "HamsterSuit100}
 
--- If the player's name is "yRiderlo2013", load the alternate script
-if playerName == "Hamstersuit3" then
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Denied.Lua", true))()
+-- Check if the local player's name is in the bannedUsers list
+local playerName = game.Players.LocalPlayer.Name
+for _, bannedName in pairs(bannedUsers) do
+    if playerName == bannedName then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/RandomBroLol/Random/refs/heads/main/Denied.Lua", true))() 
 else
     local Window = OrionLib:MakeWindow({
         Name = "✨ Limits Amazing Hub ✨", 
