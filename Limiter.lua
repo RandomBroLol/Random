@@ -1,7 +1,7 @@
 -- Made By Limit and UI Made by Rayfield on  https://docs.sirius.menu/rayfield anyways dont edit this code!
 local playerName = game.Players.LocalPlayer.Name
 local restrictedUsers = {
-    "Hamstersuit3", "Hamstersuit0", "HamsterSuit100", 
+    "TvojTlstyKokot", "Hamstersuit0", "HamsterSuit100", 
     "Hamstersuit", "Hamstersuit1", "HamsterSuit2"
 }
 
