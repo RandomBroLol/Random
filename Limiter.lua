@@ -194,6 +194,13 @@ local Button = MiscTab:CreateButton({
              loadstring(game:HttpGet("https://pastebin.com/raw/AZVi2tuK"))()
    end,
 })
+
+local Button = MiscTab:CreateButton({
+   Name = "🧈 ButterHub",
+   Callback = function()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Root2.lua'))("")
+   end,
+})
 -- Troll Tab
 local TrollTab = Window:CreateTab("Troll", 9943307858) -- Title, Image
 local Label = TrollTab:CreateLabel("💎 Trolling")
