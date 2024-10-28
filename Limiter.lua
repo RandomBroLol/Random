@@ -201,6 +201,15 @@ local Button = MiscTab:CreateButton({
    loadstring(game:HttpGet('https://raw.githubusercontent.com/Butterisgood/Butter/main/Root2.lua'))("")
    end,
 })
+
+local Button = MiscTab:CreateButton({
+   Name = "🌌 Sirius",
+   Callback = function()
+      loadstring(game:HttpGet('https://sirius.menu/script'))();
+   end,
+})
+
+local Paragraph = MiscTab:CreateParagraph({Title = "Note:", Content = "❗ Vedel si o tom ze sirius urobil tento UI? skuste jeho script je velmi dobry!"})
 -- Troll Tab
 local TrollTab = Window:CreateTab("Troll", 9943307858) -- Title, Image
 local Label = TrollTab:CreateLabel("💎 Trolling")
