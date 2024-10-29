@@ -2,7 +2,7 @@
 local playerName = game.Players.LocalPlayer.Name
 local restrictedUsers = {
     "Hamstersuit3", "Hamstersuit0", "HamsterSuit100", 
-    "Hamstersuit", "Hamstersuit1", "HamsterSuit2"
+    "Hamstersuit", "Hamstersuit1", "HamsterSuit2", "Oli_Bir141", "Oli_Bir14"
 }
 
 -- Check if the player's name is in the restricted list
