@@ -89,10 +89,23 @@ local Button = GamesTab:CreateButton({
    end,
 })
 
-local Button = GamesTab:CreateButton({
-   Name = "⚰️ Strongest Battlegrlounds (broken rn)",
-   Callback = function()
-             --mUST FILL
+local Dropdown = GamesTab:CreateDropdown({
+   Name = "💥 Strongest BattleGrounds",
+   Options = {"OP Script", "Free KJ (Key:KJAlpha)"},
+   CurrentOption = {"OP Script"},
+   MultipleOptions = false,
+   Flag = "Dropdown1",
+   Callback = function(Option)
+      -- Check which option is selected and execute corresponding code
+      if Option[1] == "OP Script" then
+         -- Executes the first set of commands
+         getgenv().ToggleKeybind = Enum.KeyCode.RightControl
+         getgenv().FreeEmotesTab = false
+         loadstring(game:HttpGet("https://raw.githubusercontent.com/ATrainz/main/main/Phantasm-Loader.lua"))()
+      elseif Option[1] == "Free KJ (Key:KJAlpha)" then
+         -- Executes the second set of commands
+         loadstring(game:HttpGet("https://voidy.lol/KJkeynewtemporary.lua", true))()
+      end
    end,
 })
 
@@ -223,7 +236,7 @@ local Button = TrollTab:CreateButton({
 local Label = TrollTab:CreateLabel("🚫 Will not work if the game dosent support character collision!!!")
 
 local Button = TrollTab:CreateButton({
-   Name = "🐱‍ Cat ChatBypasser FE (Key is:morechaos)",
+   Name = "🐱‍ Cat ChatBypasser FE (Key is:mdma)",
    Callback = function()
              loadstring(game:HttpGet("https://raw.githubusercontent.com/shadow62x/catbypass/main/upfix"))()
    end,
