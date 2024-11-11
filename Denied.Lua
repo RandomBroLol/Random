@@ -2,24 +2,30 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "🎃Limits Amazing Hub -Halloween-🎃",
-   LoadingTitle = "UI By Rayfield 🎃Limits Amazing Hub -Halloween-🎃",
+   Name = "🍗Limits Amazing Hub -November-🍗",
+   LoadingTitle = "UI By Rayfield 🍗Limits Amazing Hub -November-🍗",
    LoadingSubtitle = "By Sirius And Limit",
+   Theme = "AmberGlow", -- Check https://docs.sirius.menu/rayfield/configuration/themes
+
+   DisableRayfieldPrompts = false,
+
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = nil, -- Create a custom folder for your hub/game
-      FileName = "GetBannedLOL"
+      FolderName = "LimitsHubNew", -- Create a custom folder for your hub/game
+      FileName = "Limits Hub"
    },
+
    Discord = {
-      Enabled = false,
+      Enabled = false, -- Prompt the user to join your Discord server if their executor supports it
       Invite = "noinvitelink", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD
       RememberJoins = true -- Set this to false to make them join the discord every time they load it up
    },
+
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Key System RAUR",
+      Title = "Untitled",
       Subtitle = "Key System",
-      Note = "No method of obtaining the key is provided so fuck you!",
+      Note = "No method of obtaining the key is provided", -- Use this to tell the user how to get a key
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
       SaveKey = true, -- The user's key will be saved, but if you change the key, they will be unable to use your script
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
@@ -28,7 +34,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 Rayfield:Notify({
-   Title = "🎃Limits Amazing Hub -Halloween-🎃",
+   Title = "Error Loading Info",
    Content = "Loaded. Enjoy! UI by: Sirius!",
    Duration = 6.5,
    Image = 5205790785,
